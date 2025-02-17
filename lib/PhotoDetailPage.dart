@@ -119,7 +119,8 @@ class PhotoDetailPage extends StatelessWidget {
       }
 
       // Extract filename and ensure it includes an image extension
-      String fileName = imageUrl.split('/').last.split('?').first; // Extract filename
+      String fileName =
+          imageUrl.split('/').last.split('?').first; // Extract filename
       if (!fileName.contains('.')) {
         fileName += '.jpg'; // Default to .jpg if no extension is present
       }
@@ -150,10 +151,6 @@ class PhotoDetailPage extends StatelessWidget {
       debugPrint("Failed to refresh gallery: $e");
     }
   }
-
-
-
-
 
   Future<void> _shareImage(String imageUrl) async {
     try {

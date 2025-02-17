@@ -40,6 +40,7 @@ dependencies:
   cached_network_image: ^3.2.3
   sqflite: ^2.4.1
   path: ^1.9.0
+  url_launcher: ^6.1.10
 
   connectivity: ^3.0.6
   photo_view: ^0.14.0
@@ -62,6 +63,7 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^2.3.3
   hive_generator: ^1.1.0
+  flutter_launcher_icons: "^0.13.1"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -69,6 +71,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "icons/launcher.jpg"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
